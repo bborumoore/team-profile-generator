@@ -1,0 +1,30 @@
+{
+  "name": "unit10hw",
+  "version": "1.0.0",
+  "description": "OOP and testing for week 10 homework",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bborumoore/team-profile-generator"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bborumoore/team-profile-generator"
+  },
+  "homepage": "https://github.com/bborumoore/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "node": "^16.4.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
