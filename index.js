@@ -16,6 +16,7 @@ const idArray = [];
 function appMenu() {
 
   function createManager() {
+    console.log("You've reached statement 1");
     console.log("Please build your team");
     inquirer.prompt([
       {
@@ -72,6 +73,7 @@ function appMenu() {
         }
       }
     ]).then(answers => {
+    console.log("You've reached statement 2");
       const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerPhoneNumber);
       teamMembers.push(manager);
       idArray.push(answers.managerId);
@@ -80,7 +82,7 @@ function appMenu() {
   }
 
   function createTeam() {
-
+    console.log("You've reached statement 3");
     inquirer.prompt([
       {
         type: "list",
@@ -94,10 +96,10 @@ function appMenu() {
       }
     ]).then(userChoice => {
       switch (userChoice.memberChoice) {
-        case "Engineer":
+        case "1. Engineer":
           addEngineer();
           break;
-        case "Intern":
+        case "2. Intern":
           addIntern();
           break;
         default:
